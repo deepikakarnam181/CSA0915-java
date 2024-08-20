@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+class abc
+{
+    int id=101;
+    String name="Deepika";
+    public static void main(String args[])
+    {
+        abc obj=new abc();
+        System.out.println("id: "+obj.id);
+        System.out.println("name: "+obj.name);
+    }
+}
