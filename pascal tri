@@ -1,0 +1,25 @@
+import java.util.*;
+class Pasc
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter");
+        int rows,i,j,k,n;
+        rows = sc.nextInt();
+        for (i = 0; i < rows; i++) 
+        {
+            n = 1;
+            for (j = 0; j < rows - i; j++) 
+            {
+                System.out.print(" ");
+            }
+            for (k = 0; k <= i; k++) 
+            {
+                System.out.print(n + " ");
+                n = n * (i - k) / (k + 1);
+            }
+            System.out.println();
+        }
+    }
+}
