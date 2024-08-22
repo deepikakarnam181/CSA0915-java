@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+class abc
+{
+    public static void main(String[]args)
+    {
+        int temp,n=153,sum=0,digit;
+        temp=n;
+        while(temp>0)
+        {
+            digit=temp%10;
+            sum+=digit*digit*digit;
+            temp=temp/10;
+        }
+        if(sum==n)
+        System.out.println("armstrong number");
+        else
+        System.out.println("not");
+    }
+}
