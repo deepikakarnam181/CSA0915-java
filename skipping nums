@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+class fibo
+{
+    public static void main(String args[])
+    {
+        int i,m=50,n=100,k=7;
+        for(i=m;i<=n;i=i+k+1)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
