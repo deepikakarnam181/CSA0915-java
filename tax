@@ -1,0 +1,28 @@
+import java.util.*;
+public class e {
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        double inc=sc.nextInt();
+        if(inc<=150000)
+        {
+            System.out.println("no tax");
+        }
+        else if(inc>=150001 && inc<=300000)
+        {
+            System.out.println("tax: "+inc*0.10);
+        }
+        else if(inc>=300001 && inc<=500000)
+        {
+            System.out.println("tax: "+inc*0.20);
+        }
+        else if(inc>500001)
+        {
+            System.out.println("tax: "+inc*0.30);
+        }
+        else
+        {
+            System.out.println("invalid");
+        }
+    }
+}
