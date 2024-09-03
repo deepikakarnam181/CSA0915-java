@@ -1,0 +1,62 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+class a
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n;
+        System.out.println("1.number palindrome");
+        System.out.println("2.string palindrome");
+        System.out.println("enter your choice");
+        n=sc.nextInt();
+        sc.nextLine();
+        if(n==1)
+        {
+            int a,r=0;
+            System.out.println("enter number");
+            a=sc.nextInt();
+            int o=a;
+            while(a!=0)
+            {
+                int re=a%10;
+                r=r*10+re;
+                a=a/10;
+            }
+            if(r==o)
+            {
+                System.out.println(" palindrome");
+            }
+            else
+            {
+                System.out.println("not a palindrome");
+            }
+        }
+        else if(n==2)
+        {
+            String p;
+            System.out.println("enter string");
+            p=sc.nextLine();
+            String b=p;
+            String pa="";
+            int l=p.length();
+            for(int j=l-1;j>=0;j--)
+            {
+              pa=pa+p.charAt(j);  
+            }
+            if(pa.equals(b))
+            {
+              System.out.println(" palindrome");  
+            }
+            else
+            {
+                System.out.println("not a palindrome");
+            }
+        }
+        else
+        {
+            System.out.println(" in valid");
+        }
+    }
+}
