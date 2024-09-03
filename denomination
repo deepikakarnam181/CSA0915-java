@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+class s
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int d1=sc.nextInt();
+        int c1=sc.nextInt();
+        int d2=sc.nextInt();
+        int c2=sc.nextInt();
+        int d3=sc.nextInt();
+        int c3=sc.nextInt();
+        int d4=sc.nextInt();
+        int c4=sc.nextInt();
+        double total_bal=(d1*c1)+(d2*c2)+(d3*c3)+(d4*c4);
+        System.out.print(total_bal);
+    }
+}
