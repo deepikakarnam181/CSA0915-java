@@ -1,0 +1,35 @@
+import java.util.*;
+public class e {
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+        int p=sc.nextInt();
+        int c=sc.nextInt();
+        int total=m+n+p+c;
+        double agg=(total/400.0)*100;
+        System.out.println("total:"+total);
+        System.out.println("aggrigate: "+agg);
+        if(agg>75)
+        {
+            System.out.println("grade is distinction");
+        }
+        else if(agg>=60 && agg<75)
+        {
+            System.out.println("first");
+        }
+        else if(agg>=50 && agg<60)
+        {
+            System.out.println("second");
+        }
+        else if(agg>=40 && agg<50)
+        {
+            System.out.println("third");
+        }
+        else
+        {
+            System.out.println("fail");
+        }
+    }
+}
