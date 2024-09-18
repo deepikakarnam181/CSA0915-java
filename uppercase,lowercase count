@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+class a
+{
+    public static void main (String args[])
+    {
+        char c;
+        Scanner sc=new Scanner(System.in);
+        int lower=0,upper=0,digit=0;
+        System.out.println("enter * to exit");
+        do
+        {
+            c=sc.next().charAt(0);
+            if(c>='A' && c<='Z')
+            {
+                upper++;
+            }
+            else if(c>='a' && c<='z')
+            {
+                lower++;
+            }
+            else if(c>='0' && c<='9')
+            {
+                digit++;
+            }
+        }
+        while(c!='*');
+        System.out.println("no of upprecase:"+upper);
+        System.out.println("no of lower case:"+lower);
+        System.out.println("no of digits:"+digit);
+    }
+}
