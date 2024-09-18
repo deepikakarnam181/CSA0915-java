@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+class bin
+{
+    public static void main(String args[])
+    {
+        String b;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the binary number");
+        b=sc.nextLine();
+        int d=Integer.parseInt(b,2);
+        String o=Integer.toOctalString(d);
+        System.out.println("decimal number is"+d);
+        System.out.println("octal number is"+o);
+    }
+}
