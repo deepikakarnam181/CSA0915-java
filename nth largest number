@@ -1,0 +1,24 @@
+import java.io.*;
+class s
+{
+    public static void main(String args[])
+    {
+        int a[]={2,7,4,8,3,9,5,1};
+        int l=a.length;
+        int i,j,n=3;
+        for(i=0;i<l;i++)
+        {
+            for(j=i+1;j<l;j++)
+            {
+                if(a[i]>a[j])
+                {
+                    int temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        int lar=a[l-n];
+        System.out.print(lar);
+    }
+}
