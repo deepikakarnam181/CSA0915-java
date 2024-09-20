@@ -1,0 +1,29 @@
+import java.util.*;
+class R {
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int count = 0;
+        while (true) 
+        {
+            int reversed = 0;
+            int temp = num;
+            while (temp > 0) 
+            {
+                reversed = reversed * 10 + temp % 10;
+                temp /= 10;
+            }
+            if (num == reversed) 
+            {
+                break;
+            }
+            num = num + reversed;
+            count++;
+            System.out.println("Iteration " + count + ": " + num);
+        }
+        System.out.println("Palindrome is " + num);
+        System.out.println("Total iterations: " + count);
+    }
+}
