@@ -1,0 +1,22 @@
+class S
+{
+    public static void main(String[] args) 
+    {
+        double num1 = 10;
+        double num2 = 5; 
+        System.out.println("Addition: " + (num1 + num2));
+        System.out.println("Subtraction: " + (num1 - num2));
+        System.out.println("Multiplication: " + (num1 * num2));
+        try 
+        {
+            double result = divide(num1, num2);
+            System.out.println("Division: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero is not allowed.");
+        }
+    }
+    public static double divide(double a, double b) 
+    {
+        return a / b; 
+    }
+}
