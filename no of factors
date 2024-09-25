@@ -1,0 +1,15 @@
+import java.io.*;
+class b 
+{
+    public static void main(String args[]) 
+    {
+        int n = 100, fac = 0;
+        for (int i = 1; i <= n; i++) 
+        {
+            if (n % i == 0) {
+                fac = fac + 1;
+            }
+        }
+        System.out.println("Number of divisors: " + fac);
+    }
+}
