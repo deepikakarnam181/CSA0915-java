@@ -1,0 +1,12 @@
+import java.io.*;
+class b 
+{
+    public static void main(String args[]) 
+    {
+        double n=81;
+        double sqrt=Math.pow(n,0.5);
+        double sq=Math.sqrt(n);
+        System.out.println(sqrt);
+        
+    }
+}
